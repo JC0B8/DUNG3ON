@@ -1,6 +1,0 @@
-@font-face {
-font-family:'pixellari';
-src: url('/fonts/pixellari.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
