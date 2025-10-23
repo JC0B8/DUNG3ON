@@ -23,6 +23,18 @@
     <h2 style="color:white; font-family:Garamond; text-align:center; font-size:350%"> DUNG3ON</h2>
     </div>
     export default function DynamicImage() {
-    const image1 = 'url("
+    const image1 = 'url("closedoorbw.png")';
+    const image2 = 'url("opendoorbw.png")';
+
+    const [image, setImage] = useState(image1);
+
+    return (
+    <Image
+      style={{ content: image }}
+      onMouseEnter={() => setImage(image2)}
+      onMouseOut={() => setImage(image1)}
+      width={200}
+      />
+      );
   </body>
 </html>
