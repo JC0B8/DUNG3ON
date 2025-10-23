@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicce-width, initial-scale=1.0">
+    <title>DUNG3ON</title>
+  </head>
+  <style>
+    .my-box {
+      width: 800px;
+      height: 200px;
+      padding: 5px;
+      border: 20px white;
+      border-width: 5px;
+      border-style: solid;
+      margin: auto;
+      background-color: black;
+    }
+    .crossfade {
+      position: relative;
+    }
+
+    .cross-fade img {
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+    }
+
+    .cross-fade img:first-child {
+      opacity: 1;
+    }
+
+    .cross-fade:hover img {
+      opacity: 1;
+    }
+
+    .cross-fade:hover img:first-child {
+      opacity: 0;
+    }
+  </style>
+  <body style="background-image: url('castlebp.png');">
+    <div class="my-box">
+    <h1 style="color:white; font-family:Garamond; text-align:center; font-size:300%"> Welcome To...</h1>
+    <h2 style="color:white; font-family:Garamond; text-align:center; font-size:350%"> DUNG3ON</h2>
+   <div class="cross-fade">
+     <img src="closedoorbw.png" />
+     <img src="opendoorbw.png" />
+   </div>
+    </div>
+  </body>
+</html>
