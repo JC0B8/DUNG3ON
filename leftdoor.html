@@ -7,11 +7,21 @@
   </head>
   <style>
     .my-box {
-      width: 800px;
-      height: 200px;
+      width: 650px;
+      height: 250px;
       padding: 5px;
       border: 20px white;
-      border-width: 5px;
+      border-width: 3px;
+      border-style: solid;
+      margin: auto;
+      background-color: black;
+    }
+     .my-box2 {
+      width: 800px;
+      height: 600px;
+      padding: 5px;
+      border: 20px white;
+      border-width: 3px;
       border-style: solid;
       margin: auto;
       background-color: black;
@@ -37,15 +47,42 @@
     .cross-fade:hover img:first-child {
       opacity: 0;
     }
+    .flex-container {
+      display: flex;
+    }
+    .flex-child {
+      flex: 1;
+      border: 2px solid black;
+    }
+    .flex-child:first-child {
+      margin-right: 20px;
+    }
   </style>
   <body style="background-image: url('castlebp.png');">
     <div class="my-box">
-    <h1 style="color:white; font-family:Garamond; text-align:center; font-size:300%"> Welcome To...</h1>
-    <h2 style="color:white; font-family:Garamond; text-align:center; font-size:350%"> DUNG3ON</h2>
-   <div class="cross-fade">
-     <img src="closedoorbw.png" />
-     <img src="opendoorbw.png" />
-   </div>
+    <h1 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:300%"> Welcome To...</h1>
+    <h2 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:350%"> DUNG3ON</h2>
+    </div>
+    <div class="my-box2">
+      <h1 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:200%"> You find yourself in a cold, damp, stone lair...</h1>
+      <h2 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:200%"> What do you do?</h2>
+    <div class="flex-container">
+      <div class="flex-child magenta">
+      <div class="cross-fade">
+           <img src="closedoorbw.png" style="display:inline-block;">
+           <img src="opendoorbw.png"  style="display:inline-block;">
+         </div>
+       </div>
+      <div class="flex-child green">
+    <div class="cross-fade">
+      <img src="closedoorbw.png" style="display:inline-block;">
+      <img src="opendoorbw.png"  style="display:inline-block;">
+    </div>
+    </div>
+    </div>
+      <a href="leftdoor.html">
+        <img src="opendoorbw.png" alt="open door">
+      </a>
     </div>
   </body>
 </html>
