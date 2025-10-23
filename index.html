@@ -47,6 +47,16 @@
     .cross-fade:hover img:first-child {
       opacity: 0;
     }
+    .flex-container {
+      display: flex;
+    }
+    .flex-child {
+      flex: 1;
+      border: 2px solid white;
+    }
+    .flex-child:first-child {
+      margin-right: 20px;
+    }
   </style>
   <body style="background-image: url('castlebp.png');">
     <div class="my-box">
@@ -56,15 +66,19 @@
     <div class="my-box2">
       <h1 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:200%"> You find yourself in a cold, damp, stone lair...</h1>
       <h2 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:200%"> What do you do?</h2>
-    <div>
+    <div class="flex-container">
+      <div class="flex-child magenta">
       <div class="cross-fade">
            <img src="closedoorbw.png" style="display:inline-block;">
            <img src="opendoorbw.png"  style="display:inline-block;">
          </div>
-       </div> 
+       </div>
+      <div class="flex-child green">
     <div class="cross-fade">
       <img src="closedoorbw.png" style="display:inline-block;">
       <img src="opendoorbw.png"  style="display:inline-block;">
+    </div>
+    </div>
     </div>
     </div>
   </body>
