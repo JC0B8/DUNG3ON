@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicce-width, initial-scale=1.0">
+    <title>DUNG3ON</title>
+  </head>
+  <style>
+    .my-box {
+      width: 650px;
+      height: 250px;
+      padding: 5px;
+      border: 20px white;
+      border-width: 3px;
+      border-style: solid;
+      margin: auto;
+      background-color: black;
+    }
+     .my-box2 {
+      width: 800px;
+      height: 600px;
+      padding: 5px;
+      border: 20px white;
+      border-width: 3px;
+      border-style: solid;
+      margin: auto;
+      background-color: black;
+    }
+    .crossfade {
+      position: relative;
+    }
+
+    .cross-fade img {
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.25s ease-in-out;
+    }
+
+    .cross-fade img:first-child {
+      opacity: 1;
+    }
+
+    .cross-fade:hover img {
+      opacity: 1;
+    }
+
+    .cross-fade:hover img:first-child {
+      opacity: 0;
+    }
+    .flex-container {
+      display: flex;
+    }
+    .flex-child {
+      flex: 1;
+      border: 2px solid black;
+    }
+    .flex-child:first-child {
+      margin-right: 20px;
+    }
+  </style>
+  <body style="background-image: url('castlebp.png');">
+    <div class="my-box">
+    <h1 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:300%"> Welcome To The...</h1>
+    <h2 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:350%"> DUNG3ON</h2>
+    </div>
+    <div class="my-box2">
+      <h1 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:200%"> You find yourself in a cold, damp, stone cell...</h1>
+      <h2 style="color:white; font-family:Papyrus; font-weight:normal; text-align:center; font-size:200%"> What do you do?</h2>
+    <div class="flex-container">
+      <div class="flex-child magenta">
+      <div class="cross-fade">
+           <img src="closedoorbw.png" style="display:inline-block;">
+           <img src="opendoorbw.png"  style="display:inline-block;">
+         </div>
+         </div>
+      <div>
+      <p style="color:white; font-family:Papyrus; font-weight:normal; text-align:left"><a href="room1op1.html">Leave Cell</a></p>
+    </div>
+      <div class="flex-child green">
+    <div class="cross-fade">
+      <img src="closedoorbw.png" style="display:inline-block;">
+      <img src="opendoorbw.png"  style="display:inline-block;">
+        <div>
+      <p style="color:white; font-family:Papyrus; font-weight:normal; text-align:right"><a href="room1op2.html">Inspect Cell</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
+
